@@ -1,0 +1,56 @@
+#preloader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.loader{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+div.loader span{
+    width: 7.5px;
+    height:100%;
+    border-radius: 5px;
+    background-image: url('../images/dark-metal-gri.jpg');
+    animation: loading 1.5s	infinite ease-in-out;
+}
+@media screen and (max-width: 600px) {
+    #preloader{
+        height: 100vh;
+    }
+    .loader{
+        width: 60px;
+        height: 50px;
+    }
+    .loader span{
+        width:7px;
+    }
+}
+div.loader span:nth-child(1){
+    animation-delay: 0s;
+}
+div.loader span:nth-child(2){
+    animation-delay: 0.3s;
+}
+div.loader span:nth-child(3){
+    animation-delay: 0.6s;
+}
+div.loader span:nth-child(4){
+    animation-delay: 0.9s;
+}
+@keyframes loading{
+    0%, 100%{
+        transform: scaleY(100%);
+    }
+    50%{
+        transform: scaleY(60%);
+        background-image: url('../images/gold_plate.jpg');
+        background-position: center;
+    }
+
+}
