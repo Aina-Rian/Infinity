@@ -16,7 +16,7 @@ div.loader span{
     width: 7.5px;
     height:100%;
     border-radius: 5px;
-    background-image: url('../images/dark-metal-gri.jpg');
+    background: black;
     animation: loading 1.5s	infinite ease-in-out;
 }
 @media screen and (max-width: 600px) {
@@ -49,8 +49,7 @@ div.loader span:nth-child(4){
     }
     50%{
         transform: scaleY(60%);
-        background-image: url('../images/gold_plate.jpg');
-        background-position: center;
+        background:red;
     }
 
 }
